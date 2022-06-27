@@ -11,11 +11,14 @@ const cardList = document.createElement('ul')
 cardList.setAttribute('class','cards')
 document.body.append(cardList)
 
-const card = document.createElement('il')
-card.setAttribute('class','card')
-cardList.append(card)
+
 
 for (let i = 0; i < data.length; i++) {
+
+    const card = document.createElement('il')
+    card.setAttribute('class','card')
+    cardList.append(card)
+    
     card.innerHTML =` <h2 class="card--title">${data[i].name}</h2>
 <img
   width="256"
